@@ -1,0 +1,2564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=work+sans:wght200;300;400;500;600;700;800&display=swap"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/6.4.0/css/bootstrap.min.css"/>
+    <link rel="icon" href="icon.png"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh"  content="5;url=javascript:history.back()">
+    <title>منصة مستر احمد مهران</title>
+    <style>
+
+
+
+
+
+
+*{
+    margin:0 ;
+    padding:0 ;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #ffffff55;
+    color: #000;
+
+}
+.header{   
+     display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 2px 8%;
+}
+
+#sign0 a{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    line-height: inherit;
+    text-decoration: none;
+    font-size:20px ;
+    font-weight: bold;
+    border:10px solid rgb(98, 94, 94) ;
+    background-color: rgb(98, 94, 94);
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    margin-top: 2px;
+
+}
+#sign0 a:hover{
+    background-color: rgba(255, 255, 255, 0.316);
+    border:10px solid rgba(255, 255, 255, 0.316) ;
+    color: rgb(0, 0, 0);
+    z-index: 100;
+}
+
+
+.search-bar{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid  wheat;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+}
+.search-bar input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: rgb(250, 235, 235);
+    padding-left: 10px;
+}
+
+.search-bar button{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.search-bar button i{
+    font-size: 22px;
+    color: beige;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 95%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    z-index: 10;
+}
+.hidde{
+    display: none;
+}
+.container .content {
+    position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color:rgb(98, 94, 94);
+        border-radius: 10px;
+        color: #000;
+        background-color: blueviolert;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        justify-content: center;
+        margin-top: 50px;
+        z-index: 10;
+}
+.r2{
+        font-size: 40px;
+        color: rgb(227, 224, 224);
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        justify-content: center;
+        padding-top: 50px;
+}
+.content .logo{
+    font-size: 30px;
+
+}
+.text-sci h2{
+    font-size: 40px;
+    line-height: 1;
+}
+.text-sci h2 span{
+    font-size: 25px;
+}
+.text-sci p{
+    font-size: 16px;
+    margin: 20px 0;
+    width: 60%;
+}
+.social-icons a i{
+    display: inline-block;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    margin-right: 10px;
+    transition: .1s ease;
+    text-decoration: none;
+}
+.social-icons a{
+    display: inline-block;
+    justify-content: space-between;
+}
+.social-icons a:hover i{
+    transform: scale(1.3);
+}
+.container .logreg-box{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 0%);
+    height: 100%;
+}
+.logreg-box{
+    position: relative;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(98, 94, 94);
+    border-radius: 15px;
+    margin-top: 300px;
+    z-index: 10;
+}
+.logreg-box::before{
+    position: relative;
+    width: 190%;
+    height: 190%;
+    content: '';
+    background-image: conic-gradient(blue ,transparent);
+    animation: rotate_border 6s linear infinite;
+}
+.logreg-box::after{
+    position: relative;
+    width: 190%;
+    height: 190%;
+    content: '';
+    background-image: conic-gradient(red , transparent);
+    animation: rotate_border 6s linear infinite;
+    animation-delay: -3s;
+}
+@keyframes rotate_border{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }}
+
+.form-box.login{
+    position: absolute;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+    color: rgb(255, 255, 255);
+    inset: 2px;
+    border-radius: 50px 30px;
+    z-index: 10;
+}
+@media (min-width:768px) {
+    .navbar0 a{
+        position: relative;
+    width: 100%;
+    height: 100%;
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+        text-decoration: none;
+        font-size:25px ;
+        border:10px solid rgb(98, 94, 94) ;
+        background-color: rgb(98, 94, 94);
+        border-radius: 10px;
+        color: antiquewhite;
+    }
+    .navbar0 a:hover{
+        background-color: rgba(255, 255, 255, 0.296);
+        border:10px solid rgba(255, 255, 255, 0.316) ;
+        color: rgb(12, 4, 255);
+        font-size: 27px;
+        z-index: 100;
+    }
+    .container{
+        width: 100%;
+        height: 95%;
+    z-index: 100;
+    inset: 5;
+        
+    }
+    
+}
+@media (min-width:992px) {
+    .form-box.login{height:100% ;
+        background-color:rgb(98, 94, 94);
+    }
+    .logreg-box::before{
+        position: relative;
+        width: 180%;
+        height: 180%;
+        content: '';
+        background-image: conic-gradient(red ,blue);
+        animation: rotate_border 6s linear infinite;
+    }
+    .logreg-box::after{
+        position: relative;
+        width: 180%;
+        height: 180%;
+        content: '';
+        background-image: conic-gradient(blue , red);
+        animation: rotate_border 6s linear infinite;
+        animation-delay: -3s;
+    }
+    .navbar0 a{
+        position: relative;
+    width: 100%;
+    height: 100%;
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+        text-decoration: none;
+        font-size:25px ;
+        border:10px solid rgb(98, 94, 94) ;
+        background-color: rgb(98, 94, 94);
+        border-radius: 10px;
+        color: antiquewhite;
+    }
+    .navbar0 a:hover{
+        background-color: rgb(126, 121, 121);
+        border:10px solid rgb(126, 121, 121) ;
+        color: rgb(12, 4, 255);
+        font-size: 27px;
+        z-index: 100;
+    }
+    .container{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 95%;
+        background-size: cover;
+        background-position: center;
+        margin: 50px 5px;
+        z-index: 10;
+    }
+    .hidde{
+        display: none;
+    }
+    .container .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 75%;
+        height: 100%;
+        margin: 0px;
+        padding: 90px;
+        background-color:rgb(98, 94, 94);
+        color: wheat;
+        background-color: blueviolert;
+        display: flex;
+        align-items: flex-start;
+        text-align: start;
+        justify-content: space-between;
+        flex-direction: column;  
+        z-index: 10;  
+    }
+    .container .logreg-box{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: calc(100% - 50%);
+        height: 100%;
+    }
+    
+    .logreg-box{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background-color:rgb(39, 4, 72);
+        border-radius: 15px;
+        margin-top: 0;
+        z-index: 10;
+    } }
+@media (min-width:1200px){
+    .form-box.login{
+    background-color: rgb(98, 94, 94);
+    
+    height: 100%;}
+    .logreg-box::before{
+        position: relative;
+        width: 180%;
+        height: 180%;
+        content: '';
+        background-image: conic-gradient(blue ,red);
+        animation: rotate_border 6s linear infinite;
+    }
+
+    .logreg-box::after{
+        position: relative;
+        width: 190%;
+        height: 190%;
+        content: '';
+        background-image: conic-gradient(red , blue);
+        animation: rotate_border 6s linear infinite;
+        animation-delay: -3s;
+    }
+    .navbar0 a{
+        position: relative;
+    width: 100%;
+    height: 100%;
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+        text-decoration: none;
+        font-size:25px ;
+        border:10px solid rgb(98, 94, 94) ;
+        background-color: rgb(98, 94, 94);
+        border-radius: 10px;
+        color: antiquewhite;
+    }
+    .navbar0 a:hover{
+        background-color: rgba(255, 255, 255, 0.296);
+        border:10px solid rgba(255, 255, 255, 0.316) ;
+        color: rgb(12, 4, 255);
+        font-size: 27px;
+        z-index: 100;
+    }
+    .container{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 90%;
+    }
+    .hidde{
+        display: none;
+    }
+    .container .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 90%;
+        height: 100%;
+        padding: 90px;
+        background-color: rgb(98, 94, 94);
+        color: wheat;
+        background-color: blueviolert;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: start;
+    }
+    .container .logreg-box{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: calc(100% - 50%);
+        height: 100%;
+    }
+
+
+    
+    .logreg-box{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background-color:rgb(39, 4, 72);
+        border-radius: 15px;
+        margin-top: 0;
+    }
+}
+.form-box.register{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color:#030e3e; 
+       color: wheat;
+       inset: 2px;
+       border-radius: 50px 30px;
+       z-index: 10;
+}
+
+.logreg-box.form-box.login{
+    transform: translateX(0);
+    transition: transform .0.5s ease;
+}
+.logreg-box.active.form-box.login{
+    transform: translateX(1000px);
+    transition-delay: 0s;
+}
+.logreg-box .form-box.register{
+    transform: translateX(1000px);
+    transition-delay: transform .0.5s ease ;
+}
+.logreg-box.active .form-box.register{
+    transform: translateX(0);
+    transition-delay:.0.5s ;
+}
+.h2{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+.input_box{
+    position: absolute;
+    height: 70%;
+    width: 70%;
+    border-bottom:2px solid #172978 ;
+    margin: 0px 0;
+    text-align: center;
+    align-items: center;
+    transition: .5s ease;
+}
+.input_box1{
+    justify-content: space-between;
+    position: relative;
+    height: 70%;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+    margin: 30px 0;
+    text-decoration: none;
+    transition: .5s ease;
+}
+.input_box input{
+    width: 70%;
+    height: 70%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: aliceblue;
+}
+.input_text{
+    width: 70%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom:2px solid #172978 ;
+    font-size: 20px;
+    padding-left: 10px;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+.err{
+    display: block;
+    margin-left: 20px;
+    color: #ff0a0a;
+    font-style:italic;
+    margin-top: 0px;
+    text-align: center;
+}
+::placeholder{
+    position: relative;
+    right: 25px;
+    color: aliceblue;
+    bottom: 4px;
+    font-size: 19px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+}
+#icon{
+    color: rgb(7, 69, 255);
+position: relative;
+font-size: 22px;
+
+}
+.btn {
+    width: 95%;
+    height: 100%;
+    z-index: 10;
+    cursor: pointer;
+    font-size: 27px;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    background-color: #172978;
+     color: antiquewhite;
+     margin: 10px 10px;
+     border: 2px solid #37aac6;
+    align-items: center;
+    text-align: center;   
+    cursor: pointer;
+            user-select: none; 
+}
+.hidde{
+    display: none;
+}
+.btn:hover{
+    font-size: 30px;
+    background-color: #2629c3;
+    border: 0px solid #37aac6;
+}
+.login-register{
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+    color: wheat;
+}
+.login-register a{
+    text-decoration: none;
+    color: rgb(32, 36, 120);
+    font-size: 22px;
+}
+.login-register a:hover{
+    font-size: 20px;
+}
+.remember-forgot{
+    width: 100%;
+    height: 100%;
+    padding-top: px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    color:wheat;
+}
+#contant{
+    font-size: 22px;
+}
+#dn{
+    font-size: 25px;
+}
+.footer{
+    position: absolute;
+    background-color: #172978;
+    color:rgb(240, 168, 33) ;
+    text-align: center;
+    align-items: center;
+    margin-top: 900px;
+    border:50px solid #172978;
+    width: 100%;
+    height: 50%;
+    z-index: 100;
+ }
+.footer1{
+    background-color: #030e3e;
+    color:rgb(240, 168, 33) ;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    border:50px solid #030e3e;
+    letter-spacing: 2px;
+    font-size: 16px;
+ }
+ .foot{    position: absolute;
+    background-color: #172978;
+    color:rgb(240, 168, 33) ;
+    text-align: center;
+    align-items: center;
+
+    margin-top: 400px;
+    border:50px solid #172978;
+    width: 100%;
+    height: 50%;
+    z-index: 100;
+ }
+ .fot{
+    background-color: #030e3e;
+    color:rgb(240, 168, 33) ;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    border:50px solid #030e3e;
+    letter-spacing: 2px;
+    font-size: 26px;
+ }
+ .footer span{
+       text-align: center;
+       align-items: center;
+       justify-content: center;
+       font-size: 26px;
+        font-weight: bold;
+        color: rgb(244,210 , 148);
+ }
+ .ico a{
+    letter-spacing: 5px;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 30px;
+    transition: 0.1s;
+    display: inline-block;
+ }
+ .ico a:hover{
+    font-size:35px ;
+    letter-spacing: 6px;
+    justify-content: space-between;
+ }
+ .tre{
+    text-align: center;
+ }
+ .try{
+    font-size: 25px;
+ }
+#poo{
+    text-align: center;
+display: flex; 
+   justify-content: space-between;
+
+width: 100%;
+
+}
+.hidde{
+    display: none;
+    overflow: hidden;
+}
+.menu{
+    width:100%;
+  height: 100vh;
+   transition:.5s;
+   
+
+  }
+  .img-box{
+    width:65px;
+    height:65px;
+    border-radius:65%;
+    overflow:hidden;
+    border:3px solid silver;
+    flex-shrink:0;
+  }
+  .img-box img{
+    width:100%;
+  }
+  .pr{
+    display:flex;
+    align-items:center;
+    gap:30px;
+    
+  }
+  .pr h2{
+      font-size:20px;
+      text-transform:capitalize;
+  }
+  ul{
+    
+    list-style:none;
+    position:relative;
+    height:100%;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .menn{
+    display:flex;
+    justify-content: space-between;
+    text-decoration:none;
+    padding:10px;
+    margin:10px 0;
+    border-radius:8px;
+    gap: 30px;
+    transition:.1s;
+    font-size: 22px;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+  ul li a{display:block;
+    text-decoration:none;
+    padding:10px;
+    margin:10px 0;
+    border-radius:8px;
+    display:flex;
+    align-items:center;
+    gap: 30px;
+    transition:.5s;
+  }
+  ul li a:hover, .data-info .box:hover, .btn:hover{
+    background-color:#ffffff55;
+  }
+ .log-out{
+   position:absolute;
+   width:100%; 
+  
+ }	
+  ul li a i{
+   font-size:30px;   }
+  .content {
+  display: none;
+  }
+  #conc td{
+    width: 40%;
+    text-align: center;
+    align-items: center;
+
+  }
+  #conc{
+padding: 20px 0;
+
+
+  }
+  .title-info{
+      
+      display:flex;
+      text-align: center;
+      border-radius:8px;
+    width: 100%;
+
+  }
+  .data-info {
+     display:flex;
+     align-items:center;
+     justify-content:space-between;
+     flex-wrap:wrao;
+     gap:10px;
+
+  }
+  .data-info .box{
+       background-color:red;
+       height:150px;
+       flex-basis:150px;
+       flex-grow:1;
+       border-radius:8px;
+       display:flex;
+       align-items:center;
+       justify-content:space-around;
+    
+  }
+  .data-info .box i{ 
+       font-size:40px;
+  }
+  .data-info .box .data{text-align:center;}
+  .data-info .box .data span{font-size:30px;}
+
+  table {width:100%;
+      text-align:center;
+      border-spacing:8px;
+    
+    }
+  td{
+     border-radius:15px;
+     padding: 0 100px;
+  border: 4px solid #000;
+  
+  }
+  .title-info1 h2{
+
+    align-items: center;text-align: center;
+  padding: 10px 30px;
+  margin: 10px 10px;
+  border: 3px solid rgb(91, 91, 91);
+  }
+  .title-info1{
+    width: 100%;
+  }
+  .hidde{
+    display: none;
+  }
+  .dag{
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  #spn1, #spn2, #spn3, #spn4{
+    
+    width: 100%;
+  }
+ ol li{
+  display: inline;
+margin-top: 5px;
+cursor: pointer;
+justify-content: space-between;
+
+    
+    width: 55%;
+}
+#inl, #stt{
+  margin-left: 30px;
+}
+#inl{
+    width: 100%;
+}
+#spann, #spa{
+  padding: 10px 10px;
+  margin: 10px;
+  width: 100%;
+  height: 100%;
+}
+.btnn{
+    padding: 10px;
+    width: 100px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    background:red;
+}
+
+
+    </style>
+    
+</head>
+		<body>
+            <header class="header" id="header">
+              <p class="hidde" id="sun"> 
+            <i id="sun" class="fa fa-sun" aria-hidden="true" style="color: yellow; font-size: 35px; cursor: pointer;"></i>
+             </p><p  id="moon">
+              <i id="moon" class="fa fa-moon" aria-hidden="true" style=" font-size: 40px; cursor: pointer; color: rgb(33, 60, 139);"></i>  
+              </p>
+    <!--  --> 
+    <nav class="navbar0" id="sign0">
+            
+            <i  class="hidde" id="home">
+            <a href="#" id="home"> الصفحة الرئيسية</a></i>
+            <i id="lon">
+            <a href="#" id="lon" >  تسجيل   </a></i>
+        </nav>   
+    </header>
+
+    <div class="hidde" id="cont">
+    <div  class="container" >  
+        <div class="content" id="con">
+        
+            <h2><i class="fax fad1-firebase"></i>الاسطورة</h2>  
+        <div class="text-sci" >
+                <h2 class="logo">مرحبا!<br><span>.
+                    بك في منصة مستر أحمد مهران اسطورة الصعيد</span ></h2>
+                     <p>.شرح جميع تفصيلة في المنهج بالنظام الحديث للصف الثالث الثانوي
+                        </p>
+                        <div class="social-icons">
+                            <a href="#"> <i  style="color: blue;"  class="fab fa-facebook"></i> </a>
+                            <a href="#"> <i  style="color: red;"  class="fab fa-youtube"></i> </a>
+                            <a href="#"> <i  style="color:  rgb(77, 77, 224);"  class="fab fa-telegram"></i> </a>
+                            <a href="#"> <i  style="color: rgb(0, 255, 26) ;" class="fab fa-whatsapp"></i> </a>
+                        </div>
+                       </div> 
+                        </div> 
+                        
+        <div class="logreg-box" id="logreg-box">  
+                <div class="form-box login" id="login">
+                <form action="#">
+                            <h2 class="r2"  id="sinin"> سجل </h2>
+
+                            <div class="input_box1">
+                                  <span class="icon">   <i class="fa fa-phone" id="icon" aria-hidden="true"></i></span>  
+                                <label for="username"> </label>
+                                <input onkeyup="gettotal()" type="text" placeholder="اسم الطالب "name="username" class="input_text"   maxlength="35" minlength="2" required id="username" >
+                                <span class="err"></span>
+                        </div>        
+                            <div class="input_box1" id="sinin">
+                                <span class="icon">    <i class="fa fa-user" id="icon"></i></span>
+                                <label for="Namber"> </label>
+                                <input onkeyup="gettotal()" type="text" placeholder="  رقم الهاتف"name="Namber" class="input_text"   maxlength="11" minlength="11" required id="namber" >
+                                <span class="err"></span>
+                            </div>
+                            <div class="input_box1">
+                                <span class="icon" >     <i  class="fa fa-unlock-alt" id="icon"></i></span>
+                                <label for="password"></label>    
+                                <input onkeyup="gettotal()" name="password" type="password" placeholder=" الكود" class="input_text"  maxlength="6" minlength="6" required id="password" >
+                           </div> 
+                             
+                         <p type="submit"onclick="us()" class="btn" id="btn">سجل </p>
+                        
+                    
+                           <span class="err"></span>
+                        <div class="login-register" >
+                            <p>  تواصل معنا للاشتراك
+                            </p></div> 
+</div> </form> </div> </div> </div>        
+
+<div  id="tre" >
+    <div  id="try"
+    style="text-align: center;
+    align-items: center;
+    font-size: 25px;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    ">
+        <h2>مرحب</h2>
+<p>يمكننا مساعة طلاب الصف الاول والثاني الثانوي بجميع المعلومات </p> 
+
+<p><a href="#"> <i style="color: red;" class="fab fa-youtube"></i> </a>
+
+جميع فديوهات الصف الاول والثاني الثانوي علي قناتنا علي اليوتيوب
+    
+</p> 
+
+<p style="margin-top: 200px;">غير متاح حل الان</p>
+</div>
+
+  </div>
+    
+    <div class="footer" id="contant">
+    <div class="footer1">
+    
+    Developed By<span> Mahmoud ALI </span> All Right Reserved    &copy; 2024
+        </div>   
+          <div class="ico">
+        <a href="https://www.facebook.com/mahmoud.alimahmoud.7106?mibextid=2JQ9oc"> <i  style="color: blue;"   class="fab fa-facebook"></i> </a>
+        <a href="https://www.instagram.com/mahmoud.alimahmoud.7106/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"> <i  style="color: rgb(219, 12, 98);"  class="fab fa-instagram"></i> </a>
+        <a href="https://t.me/Mahmoud_A_AbdELrahim"> <i  style="color: rgb(59, 59, 230);"  class="fab fa-telegram"></i> </a>
+        <a href="https://api.whatsapp.com/send?phone=201202733405"> <i  style="color: rgb(0, 255, 0);"  class="fab fa-whatsapp"></i> </a>
+</div> </div>
+
+<div class="hidde" id="dn">
+    <div class="foot">
+    <p class="fot">
+        حافظ علي امان الموقع  
+    </p>
+</div> </div>
+
+<div id="poo" class="hidde">
+    
+    <div id="menu" class="hidde" >
+
+        <div class="menn">
+     
+        
+        <ul>
+            
+          <li class="pr">
+          <div class="img-box">
+            <img src="Mah.jpg.jpg" alt="sore">
+           </div> 
+           <h2 > </h2>
+           <li>
+            <a href="#" id="pr">
+            <i class=" fa"></i>
+            
+            <p>   </p>
+            </a>
+           
+            </li>
+          <li>
+          <a href="#" id="me">
+         <i class="fa fa-arrow-left" aria-hidden=""></i></a> </li>
+          <il>
+            
+        <p class="hidde" id="sune"> 
+            <i id="sune" class="fa fa-sun" aria-hidden="true" style="color: yellow; font-size: 35px; cursor: pointer;"></i>
+        </p><p  id="moone">
+              <i id="moone" class="fa fa-moon" aria-hidden="true" style=" font-size: 40px; cursor: pointer; color: rgb(33, 60, 139);"></i>  
+        </p></il>
+        
+ <li >
+         <a class="active" href="#" id="vido">
+         <i class="fas fa-home"></i>
+         <p>  الرئيسية</p>
+      
+         
+
+        </a>
+        <li>
+         <a href="#" id="vid1">
+         <i class="fas fa-chart-pie"></i>
+         <p > فديوهاتك</p>
+       </a>
+       <li>
+        <a href="#" id="vid" class="hidde">
+        
+        <p > الشهر1</p>
+      </a>
+     </li>
+           <li>
+        <a href="#" id="work1">
+        <i class="fas fa-pen"></i>
+        <p > الواجبات</p>
+        
+        </a>
+       
+        </li>
+        <li>
+            <a href="#" id="work" class="hidde">
+            
+            <p > الشهر1</p>
+            
+            </a>
+           
+            </li>
+           <li>
+        <a href="#" id="stu">
+        <i class="fa-solid fa-bookmark"></i>
+        <p >  مرجعات</p>
+        </a>
+        </li>
+           <li>
+        <a href="#" id="ex">
+        <i class=" fa fa-pen-to-square"></i>
+        
+        <p>  سؤال واجابة</p>
+        </a>
+       
+        </li>
+           <li>
+        <a href="#" id="re">
+         <i class="fa fa-pen-fancy"></i>
+       <p>امتحان</p>
+        
+        </a> </li>
+        <li>
+         <a href="#" id="out">
+        <i class="fas fa-sign-out"></i>
+     
+         
+         </a> </li>
+     
+     <form action="login10.html" class="hidde" id="gout">
+     </li>
+     <li class="log-out" >
+     <a href="#">
+     <p><button class="btnn"> خروج</button> </p>
+     </a>
+     </li>
+     </form>
+        </ul>
+       
+       
+          </div >
+       </div>
+       <div id="rr" class="hidde">
+         <a href="#" id="menn" class="mennn">
+           <i class="fa fa-caret-right" aria-hidden="true"></i></a> 
+           
+            
+            
+         
+       <div id="dag" class="dag">
+        
+        <div style="margin: 50px 50px;padding: 40px 40px;" id="da" class="dag"></div>
+         <h2 style="text-align: center; align-items: center;">الاسطورة</h2>
+         <p >ثقه في الله رقم 1#</p>
+         
+       </div>
+    </div>
+
+        <div class="content"  id="conc">
+            
+        <div class="title-info"  >
+         <table> <thead><tr><th style="font-size: 35px;">  فديوهاتك  </th></tr></thead>  </table>
+        </div>
+        <table>
+     <tbody>
+       <tr>
+        
+     </tr>
+        
+        
+        <td>
+         <span class="price" >
+         <video controls
+         style=" width: 50%; height: 500%;">
+             <source src="IRON IAPTOP.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+         </video>
+         <video controls
+           style=" width: 50%; height: 500%;">
+               <source src="VID2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>    
+          </video>
+       </span>
+        </td>
+     
+        <td>
+         <span class="price" >
+         <video controls
+         style=" width: 50%; height: 500%;">
+             <source src="VID3.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        </video>
+        <video controls
+           style=" width: 50%; height: 500%;">
+               <source src="VID1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>    
+       </video>
+         </span>
+     </td>
+     
+       <tr>
+       <td>
+        <span class="price" >
+        <video controls
+        style=" width: 50%; height: 500%;">
+            <source src="IRON IAPTOP.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        </video>
+        <video controls
+          style=" width: 50%; height: 500%;">
+              <source src="VID2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>    
+         </video>
+      </span>
+       </td>
+     
+       <td>
+        <span class="price" >
+        <video controls
+        style=" width: 50%; height: 500%;">
+            <source src="VID3.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+       </video>
+       <video controls
+          style=" width: 50%; height: 500%;">
+              <source src="VID1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>    
+      </video>
+        </span>
+     </td>
+     </tr>
+       
+       </tbody>
+       </table>
+     </div>
+     
+     
+     
+     <div id="inl" class="hidde" >  <div class="title-info1" ><table>
+         <thead ><tr > <h2 >حل الشهر الاول</h2>   </tr></thead>  <h2 >واجب الدرس الاول</h2>  </table></div><div>
+     <p id="spa"><bdi>*1-اول جاكم مصري في عام ابو محمد احكمد جلال عبد السلام  اول جاكم مصري في   محمد</bdi></p>
+     <p id="spn"><ol>
+       <li class="spn1">أ-محمد علي</li>
+       <li class="spn2">ب-ابرهيم</li>
+       <li class="spn3">ج-علي</li>
+       <li class="spn4">د-مراد</li>
+     </ol></p>
+
+       <p id="spa" ><bdi>*2-اول جاكم مصري في عام ابو محمد احكمد جلال عبد السلام  اول جاكم مصري في   محمد</bdi></p>
+       <p id="spn"><ol>
+         <li class="spn1">أ-محمد علي</li>
+         <li class="spn2">ب-ابرهيم</li>
+         <li class="spn3">ج-علي</li>
+         <li class="spn4">د-مراد</li>
+       </ol></p>
+         <p id="spa"><bdi>*3-اول جاكم مصري في عام ابو محمد احكمد جلال عبد السلام  اول جاكم مصري في   محمد</bdi></p>
+         <p id="spn"><ol>
+           <li class="spn1">أ-محمد علي</li>
+           <li class="spn2">ب-ابرهيم</li>
+           <li class="spn3">ج-علي</li>
+           <li class="spn4">د-مراد</li>
+         </ol></p>
+           <p id="spa"><bdi>*4-اول جاكم مصري في عام ابو محمد احكمد جلال عبد السلام  اول جاكم مصري في   محمد</bdi></p>
+           <p id="spn"><ol>
+             <li class="spn1">أ-محمد علي</li>
+             <li class="spn2">ب-ابرهيم</li>
+             <li class="spn3">ج-علي</li>
+             <li class="spn4">د-مراد</li>
+           </ol></p>
+             <p id="spa"><bdi>*5-اول جاكم مصري في عام ابو محمد احكمد جلال عبد السلام  اول جاكم مصري في   محمد</bdi></p>
+             <p id="spn"><ol>
+               <li class="spn1">أ-محمد علي</li>
+               <li class="spn2">ب-ابرهيم</li>
+               <li class="spn3">ج-علي</li>
+               <li class="spn4">د-مراد</li>
+             </ol></p>
+               <p id="spa"><bdi>*6-اول جاكم مصري في عام ابو محمد احكمد جلال عبد السلام  اول جاكم مصري في   محمد</bdi></p>
+               <p id="spn"><ol>
+                 <li class="spn1">أ-محمد علي</li>
+                 <li class="spn2">ب-ابرهيم</li>
+                 <li class="spn3">ج-علي</li>
+                 <li class="spn4">د-مراد</li>
+               </ol></p>
+                 <p id="spa"><bdi>*7-اول جاكم مصري في عام ابو محمد احكمد جلال عبد السلام  اول جاكم مصري في   محمد</bdi></p>
+                 <p id="spn"><ol>
+                   <li class="spn1">أ-محمد علي</li>
+                   <li class="spn2">ب-ابرهيم</li>
+                   <li class="spn3">ج-علي</li>
+                   <li class="spn4">د-مراد</li>
+                 </ol></p>
+                   <p id="spa"><bdi>*8-اول جاكم مصري في عام ابو محمد احكمد جلال عبد السلام  اول جاكم مصري في   محمد</bdi></p>
+                   <p id="spn"><ol>
+                     <li class="spn1">أ-محمد علي</li>
+                     <li class="spn2">ب-ابرهيم</li>
+                     <li class="spn3">ج-علي</li>
+                     <li class="spn4">د-مراد</li>
+                   </ol></p>
+                     <p id="spa"><bdi>*9-اول جاكم مصري في عام ابو محمد احكمد جلال عبد السلام  اول جاكم مصري في   محمد</bdi></p>
+                     <p id="spn"><ol>
+                       <li class="spn1">أ-محمد علي</li>
+                       <li class="spn2">ب-ابرهيم</li>
+                       <li class="spn3">ج-علي</li>
+                       <li class="spn4">د-مراد</li>
+                     </ol></p>
+                       <p id="spa"><bdi>*10-اول جاكم مصري في عام ابو محمد احكمد جلال عبد السلام  اول جاكم مصري في   محمد</bdi></p>
+                       <p id="spn"><ol>
+                         <li class="spn1">أ-محمد علي</li>
+                         <li class="spn2">ب-ابرهيم</li>
+                         <li class="spn3">ج-علي</li>
+                         <li class="spn4">د-مراد</li>
+                       </ol></p>
+                       <p id="spa"><bdi>*11-اول جاكم مصري في عام ابو محمد احكمد جلال عبد السلام  اول جاكم مصري في   محمد</bdi></p>
+                       <p id="spn"><ol>
+                         <li class="spn1">أ-محمد علي</li>
+                         <li class="spn2">ب-ابرهيم</li>
+                         <li class="spn3">ج-علي</li>
+                         <li class="spn4">د-مراد</li>
+                       </ol></p>
+                       <p id="spa"><bdi>*12-اول جاكم مصري في عام ابو محمد احكمد جلال عبد السلام  اول جاكم مصري في   محمد</bdi></p>
+                       <p id="spn"><ol>
+                         <li class="spn1">أ-محمد علي</li>
+                         <li class="spn2">ب-ابرهيم</li>
+                         <li class="spn3">ج-علي</li>
+                         <li class="spn4">د-مراد</li>
+                       </ol></p>
+                       <p id="spa"><bdi>*13-اول جاكم مصري في عام ابو محمد احكمد جلال عبد السلام  اول جاكم مصري في   محمد</bdi></p>
+                       <p id="spn"><ol>
+                         <li class="spn1">أ-محمد علي</li>
+                         <li class="spn2">ب-ابرهيم</li>
+                         <li class="spn3">ج-علي</li>
+                         <li class="spn4">د-مراد</li>
+                       </ol></p>
+                       <p id="spa"><bdi>*14-اول جاكم مصري في عام ابو محمد احكمد جلال عبد السلام  اول جاكم مصري في   محمد</bdi></p>
+                       <p id="spn"><ol>
+                         <li class="spn1">أ-محمد علي</li>
+                         <li class="spn2">ب-ابرهيم</li>
+                         <li class="spn3">ج-علي</li>
+                         <li class="spn4">د-مراد</li>
+                       </ol></p>
+                       <p id="spa"><bdi>*15-اول جاكم مصري في عام ابو محمد احكمد جلال عبد السلام  اول جاكم مصري في   محمد</bdi></p>
+                       <p id="spn"><ol>
+                         <li class="spn1">أ-محمد علي</li>
+                         <li class="spn2">ب-ابرهيم</li>
+                         <li class="spn3">ج-علي</li>
+                         <li class="spn4">د-مراد</li>
+                       </ol></p>
+                       <p id="spa"><bdi>*16-اول جاكم مصري في عام ابو محمد احكمد جلال عبد السلام  اول جاكم مصري في   محمد</bdi></p>
+                       <p id="spn"><ol>
+                         <li class="spn1">أ-محمد علي</li>
+                         <li class="spn2">ب-ابرهيم</li>
+                         <li class="spn3">ج-علي</li>
+                         <li class="spn4">د-مراد</li>
+                       </ol></p>
+     </div>
+</div>
+
+    
+     
+     <div class="hidde" id="stt">
+       <div class="title-info3" style=" display: flex;">
+         <h1>hrllp</h1>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing eliptate facere? Et quod laudantium cum repudiandae ducimus ipsam tenetur doloremque commodi sint blanditiis.</p>
+       </div>
+     </div>
+     
+     <div class="hidde" id="exe">
+       <div class="title-info3" style=" display: flex;">
+         <h1>hrllp</h1>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing eliptate facere? Et quod laudantium cum repudiandae ducimus ipsam tenetur doloremque commodi sint blanditiis.</p>
+       </div>
+     </div>
+     <div class="hidde" id="ere">
+       <div class="title-info3" style=" display: flex;">
+         <h1>hrllp</h1>
+         <p>Lorem ipsum dolor sit, t3yy999999999888888888777777777776666666amet consectetur adipisicing eliptate facere? Et quod laudantium cum repudiandae ducimus ipsam tenetur doloremque commodi sint blanditiis.</p>
+       </div>
+     </div>
+</div>
+    
+
+<script  type="text/javascript">
+    
+//let registerlink =document.getElementById('register-link');let loginglink =document.getElementById('login-link');let logregbox =document.getElementById('logreg-box');
+
+
+
+let header =document.getElementById('header')
+let sign =document.getElementById('sign')
+let sinup = document.getElementById('sinup')
+let sign0 =document.getElementById('sign0')
+let sign1 =document.getElementById('sign1')
+let login =document.getElementById('login')
+let home =document.getElementById('home')
+let lon =document.getElementById('lon')
+let lon1 =document.getElementById('lon1')
+
+let tre =document.getElementById('tre')
+let cont =document.getElementById('cont')
+let con =document.getElementById('con')
+let extr =document.getElementById('extr')
+
+let contant =document.getElementById('contant')
+let dn =document.getElementById('dn')
+
+let moon =document.getElementById('moon')
+let sun = document.getElementById('sun')
+let moone =document.getElementById('moone')
+let sune = document.getElementById('sune')
+
+let btn = document.getElementById('btn')
+let password = document.getElementById('password')
+let pass=document.getElementsByTagName('pass')
+let namber = document.getElementById('namber')
+let username = document.getElementById('username')
+let checkbox = document.getElementById('checkbox')
+let poo = document.getElementById('poo')
+let pr = document.getElementById('pr')
+let da = document.getElementById('da')
+
+let textContent = document.getElementById('textContent')
+    
+let datapro;
+if(localStorage.product !=null){datapro= JSON.parse(localStorage.product)}else{datapro=[];}
+
+btn.onclick = ()=> {
+
+if( btn){       
+btn.nextElementSibling.textContent= "ان لم تستطيع الدخول انقر مرتان او اعد كتابة الكود    ";    
+setTimeout(()=>{btn.nextElementSibling.textContent= "";}, 5000);}
+
+
+if( namber.value == ""){       
+namber.nextElementSibling.textContent= "الرجاء ادخال الرقم";
+setTimeout(()=>{
+ namber.nextElementSibling.textContent= "";}, 2000);}
+
+ if( username.value == ""){
+username.nextElementSibling.textContent= "الرجاء ادخال الاسم"; 
+setTimeout(()=>{
+username.nextElementSibling.textContent= "";}, 2000);}
+
+
+    if ((password.value !="") && (namber .value!=""))  {
+if((password.value =="111111") && (namber.value =="01001514586")) {
+
+    let newpro = {
+        username:username.value,
+        password:password.value,
+        namber:namber.value,
+    }
+    datapro.push(newpro);
+    localStorage.setItem('product',   JSON.stringify(datapro))
+    
+    window.pr.innerHTML=[username.value];
+    window.da.innerHTML=[['مرحب بك'],[username.value],[' في منصة مستر احمد مهران']];
+
+    btn?.addEventListener('click',function(){
+    cont.classList.add("hidde")});
+    btn?.addEventListener('click',function(){
+    header.classList.add("hidde")});
+    btn?.addEventListener('click',function(){
+    poo.classList.remove("hidde")});
+    btn?.addEventListener('click',function(){
+        contant.classList.add("hidde")});
+        btn?.addEventListener('click',function(){
+        rr.classList.remove("hidde")});
+    document.cookie = "password"+password.value;
+    document.cookie = "username"+namber.value}
+
+    if((password.value =="000000") && (namber.value =="01001514586")) {
+    btn?.addEventListener('click',function(){
+    cont.classList.add("hidde")});
+    btn?.addEventListener('click',function(){
+    header.classList.add("hidde")});
+    btn?.addEventListener('click',function(){
+    poo.classList.remove("hidde")});
+    btn?.addEventListener('click',function(){
+        contant.classList.add("hidde")});
+        btn?.addEventListener('click',function(){
+        rr.classList.remove("hidde")});
+    document.cookie = "password"+password.value;
+    document.cookie = "username"+namber.value}
+}else{
+}
+ body.onsubmit = ()=>{return false}
+ body.onsubmit = ()=>{return 1}}
+ 
+
+lon.addEventListener('click', function() {
+    // @ts-ignore
+    tre.classList.add("hidde");
+});
+lon.addEventListener('click', function() {
+    // @ts-ignore
+    cont.classList.remove("hidde");
+});
+lon.addEventListener('click', function() {
+    // @ts-ignore
+    home.classList.remove("hidde");
+});lon.addEventListener('click', function() {
+    // @ts-ignore
+    home.classList.remove("hidde");
+});
+lon.addEventListener('click', function() {
+    // @ts-ignore
+    lon.classList.add("hidde");
+});
+
+home.addEventListener('click', function() {
+    // @ts-ignore
+    cont.classList.add("hidde");
+});
+home.addEventListener('click', function() {
+    // @ts-ignore
+    tre.classList.remove("hidde");
+});
+home.addEventListener('click', function() {
+    // @ts-ignore
+    home.classList.add("hidde");
+});
+home.addEventListener('click', function() {
+    // @ts-ignore
+    lon.classList.remove("hidde");
+});
+moon?.addEventListener('click',function(){
+    document.body.style.background = '#123' 
+    logregbox.style.background = '#000'
+    login.style.color='#fff'
+    header.style.color = '#fff'
+    con.style.color = '#fff'
+    con.style.background = '#000'
+    home.style.color = '#fff'
+
+    
+});
+
+sun?.addEventListener('click',function(){
+    document.body.style.background = '#ffffff55' 
+    logregbox.style.background = ' rgb(98, 94, 94) '
+    con.style.color = 'wheat'
+    con.style.background =' rgb(98, 94, 94)'
+    header.style.color = '#fffcfc'
+    home.style.color = '#000'
+    
+    
+});
+
+// @ts-ignore
+sun.addEventListener('click', function() {
+    // @ts-ignore
+    sun.classList.add("hidde");
+    
+});
+// @ts-ignore
+moon.addEventListener('click', function() {
+    // @ts-ignore
+    sun.classList.remove("hidde");
+});
+
+// @ts-ignore
+moon.addEventListener('click', function() {
+    // @ts-ignore
+    moon.classList.add("hidde");
+// @ts-ignore
+});sun.addEventListener('click', function() {
+    
+    moon.classList.remove("hidde");
+});
+sune.addEventListener('click', function() {
+    // @ts-ignore
+    sune.classList.add("hidde");
+    
+});moone.addEventListener('click', function() {
+    // @ts-ignore
+    sune.classList.remove("hidde");
+});moone.addEventListener('click', function() {
+    // @ts-ignore
+    moone.classList.add("hidde");
+// @ts-ignore
+});sune.addEventListener('click', function() {
+    moone.classList.remove("hidde");
+});
+
+//document.addEventListener('contextmenu', function(e){ 'use strict';e.preventDefault();});
+
+let work = document.getElementById('work');
+let work1 = document.getElementById('work1');
+let ex = document.getElementById('ex');
+let re = document.getElementById('re');
+let stu = document.getElementById('stu');
+let vid = document.getElementById('vid');
+let vid1 = document.getElementById('vid1');
+let vido = document.getElementById('vido');
+let conc = document.getElementById('conc');
+let inl = document.getElementById('inl');
+let stt = document.getElementById('stt');
+let exe = document.getElementById('exe');
+let ere = document.getElementById('ere');
+let out = document.getElementById('out');
+let gout = document.getElementById('gout');
+let spn = document.querySelectorAll('#spn');
+let spn1 = document.querySelectorAll('.spn1');
+let spn2 = document.querySelectorAll('.spn2');
+let spn3 = document.querySelectorAll('.spn3');
+let spn4 = document.querySelectorAll('.spn4');
+let dag = document.getElementById('dag');
+let dagspa = document.getElementById('spa');
+let menn = document.getElementById('menn');
+let menu = document.getElementById('menu');
+
+moone?.addEventListener('click',function(){
+    document.body.style.background = '#123'
+    poo.style.color='#fff'
+});
+sune?.addEventListener('click',function(){
+    document.body.style.background = '#ffffff55' 
+    poo.style.color='#000'
+    });
+vido?.addEventListener('click',function(){
+    // @ts-ignore
+    conc.classList.add("hidde")
+});
+vido?.addEventListener('click',function(){
+    // @ts-ignore
+    dag.classList.remove("hidde")
+});
+vido?.addEventListener('click',function(){
+    // @ts-ignore
+    stt.classList.add("hidde")
+});
+vido?.addEventListener('click',function(){
+    // @ts-ignore
+    inl.classList.add("hidde")
+});
+vido?.addEventListener('click',function(){
+    // @ts-ignore
+    exe.classList.add("hidde")
+});
+vido?.addEventListener('click',function(){
+    // @ts-ignore
+    ere.classList.add("hidde")
+});
+vid?.addEventListener('click',function(){
+    // @ts-ignore
+    conc.classList.remove("content")
+});vid?.addEventListener('click',function(){
+    // @ts-ignore
+    conc.classList.remove("hidde")
+});
+vid?.addEventListener('click',function(){
+    // @ts-ignore
+    dag.classList.add("hidde")
+});
+vid?.addEventListener('click',function(){
+    // @ts-ignore
+    inl.classList.add("hidde")
+});
+vid?.addEventListener('click',function(){
+    // @ts-ignore
+    stt.classList.add("hidde")
+});
+vid?.addEventListener('click',function(){
+    // @ts-ignore
+    exe.classList.add("hidde")
+});
+vid?.addEventListener('click',function(){
+    // @ts-ignore
+    ere.classList.add("hidde")
+});
+vid1?.addEventListener('click',function(){
+    // @ts-ignore
+    vid.classList.remove("hidde")
+});
+work1?.addEventListener('click',function(){
+    // @ts-ignore
+    work.classList.remove("hidde")
+});
+work?.addEventListener('click',function(){
+    // @ts-ignore
+    dag.classList.add("hidde")
+});
+work?.addEventListener('click',function(){
+    // @ts-ignore
+    conc.classList.add("content")
+});
+work?.addEventListener('click',function(){
+    // @ts-ignore
+    inl.classList.remove("hidde")
+});
+work?.addEventListener('click',function(){
+    // @ts-ignore
+    stt.classList.add("hidde")
+});
+work?.addEventListener('click',function(){
+    // @ts-ignore
+    exe.classList.add("hidde")
+});
+work?.addEventListener('click',function(){
+    // @ts-ignore
+    ere.classList.add("hidde")
+});
+
+stu?.addEventListener('click',function(){
+    // @ts-ignore
+    inl.classList.add("hidde")
+});
+stu?.addEventListener('click',function(){
+    // @ts-ignore
+    conc.classList.add("hidde")
+});
+stu?.addEventListener('click',function(){
+    // @ts-ignore
+    dag.classList.add("hidde")
+});
+stu?.addEventListener('click',function(){
+    // @ts-ignore
+    stt.classList.remove("hidde")
+});
+stu?.addEventListener('click',function(){
+    // @ts-ignore
+    exe.classList.add("hidde")
+});
+stu?.addEventListener('click',function(){
+    // @ts-ignore
+    ere.classList.add("hidde")
+});
+
+ex?.addEventListener('click',function(){
+    // @ts-ignore
+    inl.classList.add("hidde")
+});
+ex?.addEventListener('click',function(){
+    // @ts-ignore
+    conc.classList.add("hidde")
+});
+ex?.addEventListener('click',function(){
+    // @ts-ignore
+    dag.classList.add("hidde")
+});
+ex?.addEventListener('click',function(){
+    // @ts-ignore
+    exe.classList.remove("hidde")
+});
+ex?.addEventListener('click',function(){
+    // @ts-ignore
+    stt.classList.add("hidde")
+});
+ex?.addEventListener('click',function(){
+    // @ts-ignore
+    ere.classList.add("hidde")
+});
+
+re?.addEventListener('click',function(){
+    // @ts-ignore
+    inl.classList.add("hidde")
+});
+re?.addEventListener('click',function(){
+    // @ts-ignore
+    conc.classList.add("hidde")
+});
+re?.addEventListener('click',function(){
+    // @ts-ignore
+    dag.classList.add("hidde")
+});
+re?.addEventListener('click',function(){
+    // @ts-ignore
+    ere.classList.remove("hidde")
+});
+re?.addEventListener('click',function(){
+    // @ts-ignore
+    exe.classList.add("hidde")
+});
+re?.addEventListener('click',function(){
+    // @ts-ignore
+    gout.classList.add("hidde")
+});
+
+out?.addEventListener('click',function(){
+    // @ts-ignore
+    gout.classList.remove("hidde")
+});
+ex?.addEventListener('click',function(){
+    // @ts-ignore
+    gout.classList.add("hidde")
+});stu?.addEventListener('click',function(){
+    // @ts-ignore
+    gout.classList.add("hidde")
+});work?.addEventListener('click',function(){
+    // @ts-ignore
+    gout.classList.add("hidde")
+});
+work1?.addEventListener('click',function(){
+    // @ts-ignore
+    gout.classList.add("hidde")
+});
+
+vid1?.addEventListener('click',function(){
+    // @ts-ignore
+    gout.classList.add("hidde")
+});
+vid?.addEventListener('click',function(){
+    // @ts-ignore
+    gout.classList.add("hidde")
+});
+
+vido?.addEventListener('click',function(){
+    // @ts-ignore
+    gout.classList.add("hidde")
+});
+
+re?.addEventListener('click',function(){
+    // @ts-ignore
+    stt.classList.add("hidde")
+});
+menn?.addEventListener('click',function(){
+    // @ts-ignore
+    menu.classList.remove("hidde")
+});
+menn?.addEventListener('click',function(){
+    // @ts-ignore
+    menn.classList.add("hidde")
+});
+
+me?.addEventListener('click',function(){
+    // @ts-ignore
+    menu.classList.add("hidde")
+});
+me?.addEventListener('click',function(){
+    // @ts-ignore
+    menn.classList.remove("hidde")
+});
+
+spn1[0].addEventListener('click',function(){
+        // @ts-ignore
+spn1[0].style.background = 'red'
+spn1[0].style.color = '#fff'
+spn2[0].style.background='#fff'
+spn3[0].style.background='#fff'
+spn4[0].style.background='#fff'
+spn2[0].style.color='#000'
+spn3[0].style.color='#000'
+spn4[0].style.color='#000'
+spa[0].style.background = 'red'
+});
+spn2[0]?.addEventListener('click',function(){
+    // @ts-ignore
+spa[0].style.background = '#2abc17'
+spn2[0].style.background = 'red'
+spn1[0].style.background='#fff'
+spn3[0].style.background='#fff'
+spn4[0].style.background='#fff'
+spn1[0].style.color='#000'
+spn3[0].style.color='#000'
+spn4[0].style.color='#000'
+});
+spn3[0]?.addEventListener('click',function(){
+    // @ts-ignore
+spn3[0].style.background='red'
+spn3[0].style.color = '#fff'
+spn1[0].style.background = '#fff'
+spn2[0].style.background='#fff'
+spn4[0].style.background='#fff'
+spn1[0].style.color = '#000'
+spn2[0].style.color='#000'
+spn4[0].style.color='#000'
+spa[0].style.background = 'red'
+});
+spn4[0]?.addEventListener('click',function(){
+// @ts-ignore
+spn4[0].style.background='red'
+spn4[0].style.color = '#fff'
+spn2[0].style.background = '#fff'
+spn1[0].style.background='#fff'
+spn3[0].style.background='#fff'
+spn2[0].style.color = '#000'
+spn1[0].style.color='#000'
+spn3[0].style.color='#000'
+spa[0].style.background = 'red'
+});
+spn1[1].addEventListener('click',function(){
+    // @ts-ignore
+spn1[1].style.background = 'red'
+spn1[1].style.color = '#fff'
+spn2[1].style.background='#fff'
+spn3[1].style.background='#fff'
+spn4[1].style.background='#fff'
+spn2[1].style.color='#000'
+spn3[1].style.color='#000'
+spn4[1].style.color='#000'
+spa[1].style.background = 'red'
+});
+spn2[1]?.addEventListener('click',function(){
+// @ts-ignore
+spa[1].style.background = '#0f7d00'
+spn2[1].style.background = 'red'
+spn1[1].style.background='#fff'
+spn3[1].style.background='#fff'
+spn4[1].style.background='#fff'
+spn1[1].style.color='#000'
+spn3[1].style.color='#000'
+spn4[1].style.color='#000'
+});
+spn3[1]?.addEventListener('click',function(){
+// @ts-ignore
+spn3[1].style.background='red'
+spn3[1].style.color = '#fff'
+spn1[1].style.background = '#fff'
+spn2[1].style.background='#fff'
+spn4[1].style.background='#fff'
+spn1[1].style.color = '#000'
+spn2[1].style.color='#000'
+spn4[1].style.color='#000'
+spa[1].style.background = 'red'
+});
+spn4[1]?.addEventListener('click',function(){
+// @ts-ignore
+spn4[1].style.background='red'
+spn4[1].style.color = '#fff'
+spn2[1].style.background = '#fff'
+spn1[1].style.background='#fff'
+spn3[1].style.background='#fff'
+spn2[1].style.color = '#000'
+spn1[1].style.color='#000'
+spn3[1].style.color='#000'
+spa[1].style.background = 'red'
+});
+spn1[2].addEventListener('click',function(){
+    // @ts-ignore
+spn1[2].style.background = 'red'
+spn1[2].style.color = '#fff'
+spn2[2].style.background='#fff'
+spn3[2].style.background='#fff'
+spn4[2].style.background='#fff'
+spn2[2].style.color='#000'
+spn3[2].style.color='#000'
+spn4[2].style.color='#000'
+spa[2].style.background = 'red'
+});
+spn2[2]?.addEventListener('click',function(){
+// @ts-ignore
+spa[2].style.background = '#0f7d00'
+spn2[2].style.background = 'red'
+spn1[2].style.background='#fff'
+spn3[2].style.background='#fff'
+spn4[2].style.background='#fff'
+spn1[2].style.color='#000'
+spn3[2].style.color='#000'
+spn4[2].style.color='#000'
+});
+spn3[2]?.addEventListener('click',function(){
+// @ts-ignore
+spn3[2].style.background='red'
+spn3[2].style.color = '#fff'
+spn1[2].style.background = '#fff'
+spn2[2].style.background='#fff'
+spn4[2].style.background='#fff'
+spn1[2].style.color = '#000'
+spn2[2].style.color='#000'
+spn4[2].style.color='#000'
+spa[2].style.background = 'red'
+});
+spn4[2]?.addEventListener('click',function(){
+// @ts-ignore
+spn4[2].style.background='red'
+spn4[2].style.color = '#fff'
+spn2[2].style.background = '#fff'
+spn1[2].style.background='#fff'
+spn3[2].style.background='#fff'
+spn2[2].style.color = '#000'
+spn1[2].style.color='#000'
+spn3[2].style.color='#000'
+spa[2].style.background = 'red'
+});
+spn1[3].addEventListener('click',function(){
+// @ts-ignore
+spn1[3].style.background = 'red'
+spn1[3].style.color = '#fff'
+spn2[3].style.background='#fff'
+spn3[3].style.background='#fff'
+spn4[3].style.background='#fff'
+spn2[3].style.color='#000'
+spn3[3].style.color='#000'
+spn4[3].style.color='#000'
+spa[3].style.background = 'red'
+});
+spn2[3]?.addEventListener('click',function(){
+// @ts-ignore
+spa[3].style.background = '#0f7d00'
+spn2[3].style.background = 'red'
+spn1[3].style.background='#fff'
+spn3[3].style.background='#fff'
+spn4[3].style.background='#fff'
+spn1[3].style.color='#000'
+spn3[3].style.color='#000'
+spn4[3].style.color='#000'
+});
+spn3[3]?.addEventListener('click',function(){
+// @ts-ignore
+spn3[3].style.background='red'
+spn3[3].style.color = '#fff'
+spn1[3].style.background = '#fff'
+spn2[3].style.background='#fff'
+spn4[3].style.background='#fff'
+spn1[3].style.color = '#000'
+spn2[3].style.color='#000'
+spn4[3].style.color='#000'
+spa[3].style.background = 'red'
+});
+spn4[3]?.addEventListener('click',function(){
+// @ts-ignore
+spn4[3].style.background='red'
+spn4[3].style.color = '#fff'
+spn2[3].style.background = '#fff'
+spn1[3].style.background='#fff'
+spn3[3].style.background='#fff'
+spn2[3].style.color = '#000'
+spn1[3].style.color='#000'
+spn3[3].style.color='#000'
+spa[3].style.background = 'red'
+
+});
+spn1[4].addEventListener('click',function(){
+    // @ts-ignore
+spn1[4].style.background = 'red'
+spn1[4].style.color = '#fff'
+spn2[4].style.background='#fff'
+spn3[4].style.background='#fff'
+spn4[4].style.background='#fff'
+spn2[4].style.color='#000'
+spn3[4].style.color='#000'
+spn4[4].style.color='#000'
+spa[4].style.background = 'red'
+});
+spn2[4]?.addEventListener('click',function(){
+// @ts-ignore
+spa[4].style.background = '#0f7d00'
+spn2[4].style.background = 'red'
+spn1[4].style.background='#fff'
+spn3[4].style.background='#fff'
+spn4[4].style.background='#fff'
+spn1[4].style.color='#000'
+spn3[4].style.color='#000'
+spn4[4].style.color='#000'
+});
+spn3[4]?.addEventListener('click',function(){
+// @ts-ignore
+spn3[4].style.background='red'
+spn3[4].style.color = '#fff'
+spn1[4].style.background = '#fff'
+spn2[4].style.background='#fff'
+spn4[4].style.background='#fff'
+spn1[4].style.color = '#000'
+spn2[4].style.color='#000'
+spn4[4].style.color='#000'
+spa[4].style.background = 'red'
+});
+spn4[4]?.addEventListener('click',function(){
+// @ts-ignore
+spn4[4].style.background='red'
+spn4[4].style.color = '#fff'
+spn2[4].style.background = '#fff'
+spn1[4].style.background='#fff'
+spn3[4].style.background='#fff'
+spn2[4].style.color = '#000'
+spn1[4].style.color='#000'
+spn3[4].style.color='#000'
+spa[4].style.background = 'red'
+});
+spn1[5].addEventListener('click',function(){
+// @ts-ignore
+spn1[5].style.background = 'red'
+spn1[5].style.color = '#fff'
+spn2[5].style.background='#fff'
+spn3[5].style.background='#fff'
+spn4[5].style.background='#fff'
+spn2[5].style.color='#000'
+spn3[5].style.color='#000'
+spn4[5].style.color='#000'
+spa[5].style.background = 'red'
+});
+spn2[5]?.addEventListener('click',function(){
+// @ts-ignore
+spa[5].style.background = '#0f7d00'
+spn2[5].style.background = 'red'
+spn1[5].style.background='#fff'
+spn3[5].style.background='#fff'
+spn4[5].style.background='#fff'
+spn1[5].style.color='#000'
+spn3[5].style.color='#000'
+spn4[5].style.color='#000'
+});
+spn3[5]?.addEventListener('click',function(){
+// @ts-ignore
+spn3[5].style.background='red'
+spn3[5].style.color = '#fff'
+spn1[5].style.background = '#fff'
+spn2[5].style.background='#fff'
+spn4[5].style.background='#fff'
+spn1[5].style.color = '#000'
+spn2[5].style.color='#000'
+spn4[5].style.color='#000'
+spa[5].style.background = 'red'
+});
+spn4[5]?.addEventListener('click',function(){
+// @ts-ignore
+spn4[5].style.background='red'
+spn4[5].style.color = '#fff'
+spn2[5].style.background = '#fff'
+spn1[5].style.background='#fff'
+spn3[5].style.background='#fff'
+spn2[5].style.color = '#000'
+spn1[5].style.color='#000'
+spn3[5].style.color='#000'
+spa[5].style.background = 'red'
+});
+spn1[6].addEventListener('click',function(){
+// @ts-ignore
+spn1[6].style.background = 'red'
+spn1[6].style.color = '#fff'
+spn2[6].style.background='#fff'
+spn3[6].style.background='#fff'
+spn4[6].style.background='#fff'
+spn2[6].style.color='#000'
+spn3[6].style.color='#000'
+spn4[6].style.color='#000'
+spa[6].style.background = 'red'
+})
+spn2[6]?.addEventListener('click',function(){
+// @ts-ignore
+spa[6].style.background = '#0f7d00'
+spn2[6].style.background = 'red'
+spn2[6].style.color = '#fff'
+spn1[6].style.background='#fff'
+spn3[6].style.background='#fff'
+spn4[6].style.background='#fff'
+spn1[6].style.color='#000'
+spn3[6].style.color='#000'
+spn4[6].style.color='#000'
+
+});
+spn3[6]?.addEventListener('click',function(){
+// @ts-ignore
+spn3[6].style.background = 'red'
+spn3[6].style.color = '#fff'
+spn2[6].style.background='#fff'
+spn1[6].style.background='#fff'
+spn4[6].style.background='#fff'
+spn2[6].style.color='#000'
+spn1[6].style.color='#000'
+spn4[6].style.color='#000'
+spa[6].style.background = 'red'
+
+});
+spn4[6]?.addEventListener('click',function(){
+// @ts-ignore
+spn4[6].style.background = 'red'
+spn4[6].style.color = '#fff'
+spn2[6].style.background='#fff'
+spn3[6].style.background='#fff'
+spn1[6].style.background='#fff'
+spn2[6].style.color='#000'
+spn3[6].style.color='#000'
+spn1[6].style.color='#000'
+spa[6].style.background = 'red'
+});
+spn1[7].addEventListener('click',function(){
+// @ts-ignore
+spn1[7].style.background = 'red'
+spn1[7].style.color = '#fff'
+spn2[7].style.background='#fff'
+spn3[7].style.background='#fff'
+spn4[7].style.background='#fff'
+spn2[7].style.color='#000'
+spn3[7].style.color='#000'
+spn4[7].style.color='#000'
+spa[7].style.background = 'red'
+})
+spn2[7]?.addEventListener('click',function(){
+// @ts-ignore
+spa[7].style.background = '#0f7d00'
+spn2[7].style.color = '#fff'
+spn2[7].style.background = 'red'
+spn1[7].style.background='#fff'
+spn3[7].style.background='#fff'
+spn4[7].style.background='#fff'
+spn1[7].style.color='#000'
+spn3[7].style.color='#000'
+spn4[7].style.color='#000'
+});
+spn3[7]?.addEventListener('click',function(){
+// @ts-ignore
+spn3[7].style.background = 'red'
+spn3[7].style.color = '#fff'
+spn2[7].style.background='#fff'
+spn1[7].style.background='#fff'
+spn4[7].style.background='#fff'
+spn2[7].style.color='#000'
+spn1[7].style.color='#000'
+spn4[7].style.color='#000'
+spa[7].style.background = 'red'
+});
+spn4[7]?.addEventListener('click',function(){
+// @ts-ignore
+spn4[7].style.background='red'
+spn4[7].style.color = '#fff'
+spn2[7].style.background = '#fff'
+spn1[7].style.background='#fff'
+spn3[7].style.background='#fff'
+spn2[7].style.color = '#000'
+spn1[7].style.color='#000'
+spn3[7].style.color='#000'
+spa[7].style.background = 'red'
+});
+spn1[8].addEventListener('click',function(){
+    // @ts-ignore
+spn1[8].style.background = 'red'
+spn1[8].style.color = '#fff'
+spn2[8].style.background='#fff'
+spn3[8].style.background='#fff'
+spn4[8].style.background='#fff'
+spn2[8].style.color='#000'
+spn3[8].style.color='#000'
+spn4[8].style.color='#000'
+spa[8].style.background = 'red'
+});
+spn2[8].addEventListener('click',function(){
+        // @ts-ignore
+spn2[8].style.background = 'red'
+spn2[8].style.color = '#fff'
+spn1[8].style.background='#fff'
+spn3[8].style.background='#fff'
+spn4[8].style.background='#fff'
+spn1[8].style.color='#000'
+spn3[8].style.color='#000'
+spn4[8].style.color='#000'
+spa[8].style.background = 'red'
+});
+spn3[8].addEventListener('click',function(){
+            // @ts-ignore
+spn3[8].style.background = 'red'
+spn3[8].style.color = '#fff'
+spn1[8].style.background='#fff'
+spn2[8].style.background='#fff'
+spn4[8].style.background='#fff'
+spn1[8].style.color='#000'
+spn2[8].style.color='#000'
+spn4[8].style.color='#000'
+spa[8].style.background = '#2abc17'
+});
+spn4[8].addEventListener('click',function(){
+                // @ts-ignore
+spn4[8].style.background = 'red'
+spn4[8].style.color = '#fff'
+spn1[8].style.background='#fff'
+spn2[8].style.background='#fff'
+spn3[8].style.background='#fff'
+spn1[8].style.color='#000'
+spn2[8].style.color='#000'
+spn3[8].style.color='#000'
+spa[8].style.background = 'red'
+});
+spn1[9].addEventListener('click',function(){
+    // @ts-ignore
+spn1[9].style.background = 'red'
+spn1[9].style.color = '#fff'
+spn2[9].style.background='#fff'
+spn3[9].style.background='#fff'
+spn4[9].style.background='#fff'
+spn2[9].style.color='#000'
+spn3[9].style.color='#000'
+spn4[9].style.color='#000'
+spa[9].style.background = 'red'
+});
+spn2[9].addEventListener('click',function(){
+    // @ts-ignore
+spn2[9].style.background = 'red'
+spn2[9].style.color = '#fff'
+spn1[9].style.background='#fff'
+spn3[9].style.background='#fff'
+spn4[9].style.background='#fff'
+spn1[9].style.color='#000'
+spn3[9].style.color='#000'
+spn4[9].style.color='#000'
+spa[9].style.background = 'red'
+});
+spn3[9].addEventListener('click',function(){
+            // @ts-ignore
+spn3[9].style.background = 'red'
+spn3[9].style.color = '#fff'
+spn1[9].style.background='#fff'
+spn2[9].style.background='#fff'
+spn4[9].style.background='#fff'
+spn1[9].style.color='#000'
+spn2[9].style.color='#000'
+spn4[9].style.color='#000'
+spa[9].style.background = 'red'
+});
+spn4[9].addEventListener('click',function(){
+// @ts-ignore
+spn4[9].style.background = 'red'
+spn4[9].style.color = '#fff'
+spn1[9].style.background='#fff'
+spn2[9].style.background='#fff'
+spn3[9].style.background='#fff'
+spn1[9].style.color='#000'
+spn2[9].style.color='#000'
+spn3[9].style.color='#000'
+spa[9].style.background = '#2abc17'
+});
+spn1[10].addEventListener('click',function(){
+// @ts-ignore
+spn1[10].style.background = 'red'
+spn1[10].style.color = '#fff'
+spn2[10].style.background='#fff'
+spn3[10].style.background='#fff'
+spn4[10].style.background='#fff'
+spn2[10].style.color='#000'
+spn3[10].style.color='#000'
+spn4[10].style.color='#000'
+spa[10].style.background = 'red'
+});
+spn2[10].addEventListener('click',function(){
+// @ts-ignore
+spn2[10].style.background = 'red'
+spn2[10].style.color = '#fff'
+spn1[10].style.background='#fff'
+spn3[10].style.background='#fff'
+spn4[10].style.background='#fff'
+spn1[10].style.color='#000'
+spn3[10].style.color='#000'
+spn4[10].style.color='#000'
+spa[10].style.background = 'red'
+});
+spn3[10].addEventListener('click',function(){
+// @ts-ignore
+spn3[10].style.background = 'red'
+spn3[10].style.color = '#fff'
+spn1[10].style.background='#fff'
+spn2[10].style.background='#fff'
+spn4[10].style.background='#fff'
+spn1[10].style.color='#000'
+spn2[10].style.color='#000'
+spn4[10].style.color='#000'
+spa[10].style.background = 'red'
+});
+spn4[10].addEventListener('click',function(){
+// @ts-ignore
+spn4[10].style.background = 'red'
+spn4[10].style.color = '#fff'
+spn1[10].style.background='#fff'
+spn2[10].style.background='#fff'
+spn3[10].style.background='#fff'
+spn1[10].style.color='#000'
+spn2[10].style.color='#000'
+spn3[10].style.color='#000'
+spa[10].style.background = '#2abc17'
+});
+spn1[11].addEventListener('click',function(){
+// @ts-ignore
+spn1[11].style.background = 'red'
+spn1[11].style.color = '#fff'
+spn2[11].style.background='#fff'
+spn3[11].style.background='#fff'
+spn4[11].style.background='#fff'
+spn2[11].style.color='#000'
+spn3[11].style.color='#000'
+spn4[11].style.color='#000'
+spa[11].style.background = 'red'
+});
+spn2[11].addEventListener('click',function(){
+// @ts-ignore
+spn2[11].style.background = 'red'
+spn2[11].style.color = '#fff'
+spn1[11].style.background='#fff'
+spn3[11].style.background='#fff'
+spn4[11].style.background='#fff'
+spn1[11].style.color='#000'
+spn3[11].style.color='#000'
+spn4[11].style.color='#000'
+spa[11].style.background = 'red'
+});
+spn3[11].addEventListener('click',function(){
+// @ts-ignore
+spn3[11].style.background = 'red'
+spn3[11].style.color = '#fff'
+spn1[11].style.background='#fff'
+spn2[11].style.background='#fff'
+spn4[11].style.background='#fff'
+spn1[11].style.color='#000'
+spn2[11].style.color='#000'
+spn4[11].style.color='#000'
+spa[11].style.background = 'red'
+});
+spn4[10].addEventListener('click',function(){
+                    // @ts-ignore
+spn4[11].style.background = 'red'
+spn4[11].style.color = '#fff'
+spn1[11].style.background='#fff'
+spn2[11].style.background='#fff'
+spn3[11].style.background='#fff'
+spn1[11].style.color='#000'
+spn2[11].style.color='#000'
+spn3[11].style.color='#000'
+spa[11].style.background = '#2abc17'
+});
+spn1[12].addEventListener('click',function(){
+    // @ts-ignore
+spn1[12].style.background = 'red'
+spn1[12].style.color = '#fff'
+spn2[12].style.background='#fff'
+spn3[12].style.background='#fff'
+spn4[12].style.background='#fff'
+spn2[12].style.color='#000'
+spn3[12].style.color='#000'
+spn4[12].style.color='#000'
+spa[12].style.background = 'red'
+});
+spn2[10].addEventListener('click',function(){
+    // @ts-ignore
+spn2[12].style.background = 'red'
+spn2[12].style.color = '#fff'
+spn1[12].style.background='#fff'
+spn3[12].style.background='#fff'
+spn4[12].style.background='#fff'
+spn1[12].style.color='#000'
+spn3[12].style.color='#000'
+spn4[12].style.color='#000'
+spa[12].style.background = 'red'
+});
+spn3[12].addEventListener('click',function(){
+// @ts-ignore
+spn3[12].style.background = 'red'
+spn3[12].style.color = '#fff'
+spn1[12].style.background='#fff'
+spn2[12].style.background='#fff'
+spn4[12].style.background='#fff'
+spn1[12].style.color='#000'
+spn2[12].style.color='#000'
+spn4[12].style.color='#000'
+spa[12].style.background = 'red'
+});
+spn4[10].addEventListener('click',function(){
+// @ts-ignore
+spn4[12].style.background = 'red'
+spn4[12].style.color = '#fff'
+spn1[12].style.background='#fff'
+spn2[12].style.background='#fff'
+spn3[12].style.background='#fff'
+spn1[12].style.color='#000'
+spn2[12].style.color='#000'
+spn3[12].style.color='#000'
+spa[12].style.background = '#2abc17'
+});
+spn1[13].addEventListener('click',function(){
+// @ts-ignore
+spn1[13].style.background = 'red'
+spn1[13].style.color = '#fff'
+spn2[13].style.background='#fff'
+spn3[13].style.background='#fff'
+spn4[13].style.background='#fff'
+spn2[13].style.color='#000'
+spn3[13].style.color='#000'
+spn4[13].style.color='#000'
+spa[13].style.background = 'red'
+    });
+spn2[13].addEventListener('click',function(){
+    // @ts-ignore
+spn2[13].style.background = 'red'
+spn2[13].style.color = '#fff'
+spn1[13].style.background='#fff'
+spn3[13].style.background='#fff'
+spn4[13].style.background='#fff'
+spn1[13].style.color='#000'
+spn3[13].style.color='#000'
+spn4[13].style.color='#000'
+spa[13].style.background = 'red'
+});
+spn3[13].addEventListener('click',function(){
+            // @ts-ignore
+spn3[13].style.background = 'red'
+spn3[13].style.color = '#fff'
+spn1[13].style.background='#fff'
+spn2[13].style.background='#fff'
+spn4[13].style.background='#fff'
+spn1[13].style.color='#000'
+spn2[13].style.color='#000'
+spn4[13].style.color='#000'
+spa[13].style.background = 'red'
+});
+spn4[13].addEventListener('click',function(){
+                    // @ts-ignore
+spn4[13].style.background = 'red'
+spn4[13].style.color = '#fff'
+spn1[13].style.background='#fff'
+spn2[13].style.background='#fff'
+spn3[13].style.background='#fff'
+spn1[13].style.color='#000'
+spn2[13].style.color='#000'
+spn3[13].style.color='#000'
+spa[13].style.background = '#2abc17'
+});
+spn1[14].addEventListener('click',function(){
+    // @ts-ignore
+spn1[14].style.background = 'red'
+spn1[14].style.color = '#fff'
+spn2[14].style.background='#fff'
+spn3[14].style.background='#fff'
+spn4[14].style.background='#fff'
+spn2[14].style.color='#000'
+spn3[14].style.color='#000'
+spn4[14].style.color='#000'
+spa[14].style.background = 'red'
+    });
+spn2[14].addEventListener('click',function(){
+    // @ts-ignore
+spn2[14].style.background = 'red'
+spn2[14].style.color = '#fff'
+spn1[14].style.background='#fff'
+spn3[14].style.background='#fff'
+spn4[14].style.background='#fff'
+spn1[14].style.color='#000'
+spn3[14].style.color='#000'
+spn4[14].style.color='#000'
+spa[14].style.background = 'red'
+});
+spn3[14].addEventListener('click',function(){
+            // @ts-ignore
+spn3[14].style.background = 'red'
+spn3[14].style.color = '#fff'
+spn1[14].style.background='#fff'
+spn2[14].style.background='#fff'
+spn4[14].style.background='#fff'
+spn1[14].style.color='#000'
+spn2[14].style.color='#000'
+spn4[14].style.color='#000'
+spa[14].style.background = 'red'
+});
+spn4[14].addEventListener('click',function(){
+                    // @ts-ignore
+spn4[14].style.background = 'red'
+spn4[14].style.color = '#fff'
+spn1[14].style.background='#fff'
+spn2[14].style.background='#fff'
+spn3[14].style.background='#fff'
+spn1[14].style.color='#000'
+spn2[14].style.color='#000'
+spn3[14].style.color='#000'
+spa[14].style.background = '#2abc17'
+});
+spn1[15].addEventListener('click',function(){
+    // @ts-ignore
+spn1[15].style.background = 'red'
+spn1[15].style.color = '#fff'
+spn2[15].style.background='#fff'
+spn3[15].style.background='#fff'
+spn4[15].style.background='#fff'
+spn2[15].style.color='#000'
+spn3[15].style.color='#000'
+spn4[15].style.color='#000'
+spa[15].style.background = 'red'
+    });
+spn2[15].addEventListener('click',function(){
+    // @ts-ignore
+spn2[15].style.background = 'red'
+spn2[15].style.color = '#fff'
+spn1[15].style.background='#fff'
+spn3[15].style.background='#fff'
+spn4[15].style.background='#fff'
+spn1[15].style.color='#000'
+spn3[15].style.color='#000'
+spn4[15].style.color='#000'
+spa[15].style.background = 'red'
+});
+spn3[15].addEventListener('click',function(){
+            // @ts-ignore
+spn3[15].style.background = 'red'
+spn3[15].style.color = '#fff'
+spn1[15].style.background='#fff'
+spn2[15].style.background='#fff'
+spn4[15].style.background='#fff'
+spn1[15].style.color='#000'
+spn2[15].style.color='#000'
+spn4[15].style.color='#000'
+spa[15].style.background = 'red'
+});
+spn4[15].addEventListener('click',function(){
+                    // @ts-ignore
+spn4[15].style.background = 'red'
+spn4[15].style.color = '#fff'
+spn1[15].style.background='#fff'
+spn2[15].style.background='#fff'
+spn3[15].style.background='#fff'
+spn1[15].style.color='#000'
+spn2[15].style.color='#000'
+spn3[15].style.color='#000'
+spa[15].style.background = '#2abc17'
+});
+
+window.onload = ()=>{}
+var body = document.querySelector('body');
+body.onsubmit = ()=>{return false}
+function gettotal(){
+    
+        if(password.value !=''){}else{}
+}
+
+
+    </script>
+</body>    
+</html>
+
+    
